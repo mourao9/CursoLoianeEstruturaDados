@@ -69,4 +69,6 @@ public class EstruturaEstatica<T> {
 	public int getTamanho() {return this.tamanho;}
 	public int getCapacidade() {return this.elementos.length;}
 	protected void incrementa(int i) {this.tamanho+=i;} 
+	public boolean estaVazia() {return getTamanho() == 0;}
+
 }
