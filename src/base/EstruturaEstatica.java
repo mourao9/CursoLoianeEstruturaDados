@@ -66,6 +66,11 @@ public class EstruturaEstatica<T> {
 		return s.toString();
 	}
 	
+	public boolean excluirUm() {
+		this.incrementa(-1);
+		return true;
+	}
+	
 	public int getTamanho() {return this.tamanho;}
 	public int getCapacidade() {return this.elementos.length;}
 	protected void incrementa(int i) {this.tamanho+=i;} 
